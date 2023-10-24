@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+  <controller class="web.controller.member.DefaultLoginController"
+    id="member-defaultLogin"></controller>
+  <controller class="web.controller.member.MemberRegistController" id="member-regist"></controller>
+  <controller class="web.controller.member.LogoutController" id="member-logout"></controller>
+  <controller class="web.controller.member.KakaoLoginController"
+    id="member-kakaoLogin"></controller>
+  <controller class="web.controller.region.SidoController" id="region-sido"></controller>
+  <controller class="web.controller.region.GugunController" id="region-gugun"></controller>
+  <controller class="web.controller.region.RegionSearchController" id="region-search"></controller>
+  <controller class="web.controller.board.BoardCreateController" id="board-create"></controller>
+  <controller class="web.controller.board.BoardListController" id="board-list"></controller>
+  <controller class="web.controller.board.BoardDetailController" id="board-detail"></controller>
+  <controller class="web.controller.board.BoardSearchController" id="board-search"></controller>
+  <controller class="web.controller.board.BoardEditController" id="board-edit"></controller>
+  <controller class="web.controller.board.BoardDeleteController" id="board-delete"></controller>
+
+  <dao class="web.model.dao.MemberDAOImpl" id="member-dao"></dao>
+  <dao class="web.model.dao.MemberSecDAOImpl" id="membersec-dao"></dao>
+  <dao class="web.model.dao.RegionDAOImpl" id="region-dao"></dao>
+  <dao class="web.model.dao.BoardDAO" id="board-dao"></dao>
+  <service class="web.model.service.MemberServiceImpl" id="member-service"></service>
+  <service class="web.model.service.RegionService" id="region-service"></service>
+  <service class="web.model.service.BoardService" id="board-service"></service>
+  <dao class="web.model.dao.MemberDAOImpl" id="member-dao"></dao>
+  <dao class="web.model.dao.MemberSecDAOImpl" id="membersec-dao"></dao>
+  <dao class="web.model.dao.RegionDAOImpl" id="region-dao"></dao>
+  <dao class="web.model.dao.BoardDAO" id="board-dao"></dao>
+  <service class="web.model.service.MemberServiceImpl" id="member-service"></service>
+  <service class="web.model.service.RegionService" id="region-service"></service>
+  <service class="web.model.service.BoardService" id="board-service"></service>
+
+
+  <controller id="member-regist">
+    <service id="member-service">
+      <dao id="member-dao"></dao>
+      <dao id="membersec-dao"></dao>
+    </service>
+  </controller>
+  <controller id="member-defaultLogin">
+    <service id="member-service">
+      <dao id="member-dao"></dao>
+      <dao id="membersec-dao"></dao>
+    </service>
+  </controller>
+  <controller id="member-logout">
+    <service id="member-service">
+      <dao id="member-dao"></dao>
+    </service>
+  </controller>
+  <controller id="member-kakaoLogin">
+    <service id="member-service">
+      <dao id="member-dao"></dao>
+    </service>
+  </controller>
+  <controller id="region-sido">
+    <service id="region-service">
+      <dao id="region-dao"></dao>
+    </service>
+  </controller>
+  <controller id="region-gugun">
+    <service id="region-service">
+      <dao id="region-dao"></dao>
+    </service>
+  </controller>
+  <controller id="region-search">
+    <service id="region-service">
+      <dao id="region-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-create">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-list">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-detail">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-search">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-edit">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+  <controller id="board-delete">
+    <service id="board-service">
+      <dao id="board-dao"></dao>
+    </service>
+  </controller>
+</beans>
